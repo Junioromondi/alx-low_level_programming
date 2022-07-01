@@ -1,10 +1,10 @@
 #include <stdio.h>
-/**
- * main - Prints numbers between 00 to 99
- *
- * Return always 0 (Success)
- */
 
+/**
+ * main - Prints numbers between 00 to 89.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i, e;
@@ -17,14 +17,17 @@ int main(void)
 		i = 48;
 		while (i < 58)
 		{
-			putchar(e);
-			putchar(i);
-			if (i == 57 && e == 57)
+			if (e != i && e < i)
 			{
-				break;
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar(' ');
 			i++;
 		}
 		e++;
