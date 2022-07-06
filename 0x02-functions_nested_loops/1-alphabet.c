@@ -1,21 +1,21 @@
-include "main.h"
+#include <stdio.h>
+#include <main.h>
+#include "main.h"
 
 /**
-* main - check the code
-* 
-* Return: Always 0.
-*/
+ * main - creates a function that prints alphabet in lowercase 
+ * print_alphabet - Prints alphabet in lowercase
+ * Return: Nothing
+ */
 
-int main(void)
-
+void print_alphabet(void)
 {
-	print_alphabet(26);
-	
-	int i;
-	
-	for (i = 26; i <= 26; i++)
-	{
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		putchar(i);
+	putchar('\n');
+	return (0);
 		_putchar(i);
-	}
 	_putchar('\n');
 }
