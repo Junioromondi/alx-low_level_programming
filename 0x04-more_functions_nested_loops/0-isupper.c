@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-if (c >= 'A' && c <= 'Z')
+while (c => 'A' && c <= 'Z')
 {
 return (1);
 {
