@@ -9,7 +9,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-char _putchar(char c);
+int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
 
 #endif
